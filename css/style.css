@@ -1,0 +1,40 @@
+/* Global */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  padding: 10px;
+  color: royalblue;
+  font-size: 50px;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+/* Main */
+
+/* Footer */
