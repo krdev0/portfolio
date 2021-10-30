@@ -15,7 +15,7 @@ ul {
 }
 
 .container {
-  max-width: 990px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -25,6 +25,8 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 60px;
+  position: absolute;
 }
 
 .logo a {
@@ -35,6 +37,55 @@ ul {
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
-/* Main */
+.navigation ul {
+  display: flex;
+  justify-content: flex-end;
+}
 
+.navigation li:not(:first-child) {
+  margin-left: 20px;
+}
+
+.navigation a {
+  color: black;
+  text-decoration: none;
+}
+/* Main */
+.hero {
+  height: 800px;
+  background-image: url(../img/ocean.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-text {
+  width: 800px;
+  margin: 0 auto;
+  background-color: rgba(50, 50, 50, 0.8);
+  box-shadow: 2px 4px 8px rgb(68, 68, 68);
+  border-radius: 8px;
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+  top: 200px;
+  color: white;
+}
+
+.hero-text h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+}
+.hero-text p {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.hero-text a {
+  text-decoration: none;
+  background-color: rgb(255, 251, 0);
+  padding: 12px 24px;
+  font-weight: bold;
+  color:black;
+  border-radius: 8px;
+}
 /* Footer */
