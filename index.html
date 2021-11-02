@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <a href="#" class="logo"><img src="#" alt="image" /></a>
+    <header class="container">
+      <a href="#" class="logo">KRDEV</a>
       <nav class="navigation">
         <ul>
           <li>Projects</li>
@@ -16,12 +17,13 @@
         </ul>
       </nav>
     </header>
-    <main class="content">
+    <main class="content container">
       <section class="projects">
+        <h2 class="section-title">Projects</h2>
         <div class="projects-wrap">
           <div class="project">
             <div class="project__image">
-              <img src="" alt="" />
+              <img src="#" alt="#" />
             </div>
             <div class="project__title">Movies Database</div>
             <div class="project__excerpt">
@@ -34,6 +36,7 @@
         </div>
       </section>
       <section class="skills">
+        <h2 class="section-title">Skills</h2>
         <div class="skills-wrap">
           <div class="skill">Javascript</div>
           <div class="skill">CSS</div>
@@ -44,8 +47,15 @@
           <div class="skill">React</div>
         </div>
       </section>
+      <section class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form action="#" method="POST">
+          <input type="text" />
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </main>
-    <footer>
+    <footer class="container">
       <div>Facebook</div>
       <div>Linkedin</div>
     </footer>
