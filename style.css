@@ -8,9 +8,42 @@
   max-width: 1300px;
   margin: 0 auto;
 }
+
 /* Header */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.navigation ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+/* Main */
+
+.section-title {
+  font-size: 34px;
+  text-align: center;
+}
+
+.projects-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  flex: 0 0 25%;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 18px;
 }
