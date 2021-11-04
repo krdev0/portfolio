@@ -5,7 +5,12 @@
 
 /* Base */
 body {
-  background-color: burlywood;
+  background-color: #ededed;
+}
+
+main {
+  background-color: white;
+  margin-top: 40px;
 }
 
 .container {
@@ -15,9 +20,7 @@ body {
 
 /* Header */
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color: blue;
 }
 
 .navigation ul {
