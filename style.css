@@ -54,3 +54,9 @@ header {
     font-weight: bold;
     font-size: 18px;
 }
+
+
+/* Skills */
+.skills-wrap {
+  display: flex;
+}
