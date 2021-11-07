@@ -59,4 +59,5 @@ header {
 /* Skills */
 .skills-wrap {
   display: flex;
+  flex-wrap: wrap;
 }
