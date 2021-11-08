@@ -59,5 +59,12 @@ header {
 /* Skills */
 .skills-wrap {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+.skill {
+  border:1px solid black;
+  padding:10px;
+  margin-right: 10px;
 }
