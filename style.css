@@ -4,13 +4,13 @@
 }
 
 /* Base */
-body {
+main {
   background-color: #ededed;
 }
 
-main {
+.content-wrap {
   background-color: white;
-  margin-top: 40px;
+  padding:40px;
 }
 
 .container {
@@ -18,6 +18,13 @@ main {
   margin: 0 auto;
 }
 
+section:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
 /* Header */
 header {
   background-color: blue;
@@ -51,10 +58,9 @@ header {
 }
 
 .project-title {
-    font-weight: bold;
-    font-size: 18px;
+  font-weight: bold;
+  font-size: 18px;
 }
-
 
 /* Skills */
 .skills-wrap {
@@ -64,7 +70,16 @@ header {
 }
 
 .skill {
-  border:1px solid black;
-  padding:10px;
+  border: 1px solid black;
+  padding: 10px;
   margin-right: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: cadetblue;
+}
+
+form {
+  padding-bottom: 350px;
 }
