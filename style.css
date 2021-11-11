@@ -27,7 +27,13 @@ h2 {
 }
 /* Header */
 header {
-  background-color: blue;
+  background-color: rgb(161, 161, 161);
+  padding:20px;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation ul {
@@ -80,6 +86,9 @@ footer {
   background-color: cadetblue;
 }
 
-form {
-  padding-bottom: 350px;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin:0 auto;
 }

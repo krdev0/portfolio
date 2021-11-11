@@ -10,13 +10,15 @@
   <body>
     <header>
       <div class="container">
-        <a href="#" class="logo">KRDEV</a>
-        <nav class="navigation">
-          <ul>
-            <li>Projects</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
+        <div class="header-wrap">
+          <a href="#" class="logo">KRDEV</a>
+          <nav class="navigation">
+            <ul>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="content">
@@ -52,8 +54,11 @@
         </section>
         <section class="contact">
           <h2 class="section-title">Contact Me</h2>
-          <form action="#" method="POST">
-            <input type="text" />
+          <form class="contact-form" action="#" method="POST">
+            <label for="email">Your email</label>
+            <input type="text" name="email" id="email">
+            <label for="text">Your message</label>
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
             <button type="submit">Send</button>
           </form>
         </section>
