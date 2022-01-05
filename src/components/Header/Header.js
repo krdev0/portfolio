@@ -33,10 +33,10 @@ const Header = () => (
     </Div2>
     <Div3>
       <SocialIcons href='https://github.com'>
-        <AiFillGithub size="2.5rem"></AiFillGithub>
+        <AiFillGithub size="3rem"></AiFillGithub>
       </SocialIcons>
       <SocialIcons href='https://linkedin.com'>
-        <AiFillLinkedin size="2.5rem"></AiFillLinkedin>
+        <AiFillLinkedin size="3rem"></AiFillLinkedin>
       </SocialIcons>
     </Div3>
   </Container>
