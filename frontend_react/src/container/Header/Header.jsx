@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { AppWrap } from '../../wrapper';
+
 import { images } from '../../constants';
 
 import './Header.scss';
@@ -19,11 +21,11 @@ const Header = () => {
         </div>
         <div className="app__header-subtitle">
           <p>A self-taught <span>web developer</span> with an
-interest in web development.</p>
+            interest in web development.</p>
         </div>
       </motion.div>
     </div>
   )
 }
 
-export default Header
+export default AppWrap(Header, 'home');
