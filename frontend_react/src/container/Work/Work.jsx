@@ -26,13 +26,24 @@ const Work = () => {
 
 
   const handleWorkFilter = (item) => {
+    setactiveFilter(item);
+    setanimateCard({ y: 100, opacity: 0 });
 
+    setTimeout(() => {
+      setanimateCard({ y: 0, opacity: 1 });
+
+      if(item === 'All') {
+        setFilterWork(works);
+      } else {
+        setFilterWork(works.filter((work) => work.tags.includes(item)))
+      }
+    }, 500)
   }
   return (
     <>
-      <h2 className='head-text'>My Creative <span>Portfolio</span></h2>
+      <h2 className='head-text'>My Creative <span>Works</span></h2>
       <div className='app__work-filter'>
-        {['UI/UX', "Web App", 'Mobile App', 'React JS', 'All'].map((item, index) => {
+        {['Javascript', "CSS", 'SCSS', 'React', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -40,9 +51,8 @@ const Work = () => {
           >
             {item}
           </div>
-        })}
+        ))}
       </div>
-
       <motion.div
         animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
@@ -57,7 +67,7 @@ const Work = () => {
                 transition={{ duration: 0.25, delayChildren: 0, ease: 'easeInOut', staggerChildren: 0.5 }}
                 className="app__work-hover app__flex"
               >
-                <a href={work.projectLink} target="_blank" rel="norefer">
+                <a href={work.projectLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.9] }}
@@ -67,7 +77,7 @@ const Work = () => {
                     <AiFillEye />
                   </motion.div>
                 </a>
-                <a href={work.codeLink} target="_blank" rel="norefer">
+                <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.9] }}

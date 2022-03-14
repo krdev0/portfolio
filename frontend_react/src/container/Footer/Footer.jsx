@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+import {images} from '../../constants';
+import { AppWrap } from '../../wrapper';
 
 import './Footer.scss';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <>
+    <h2 className='head-text'>Email Me</h2>
+    </>
   )
 }
 
